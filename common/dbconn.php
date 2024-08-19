@@ -1,12 +1,14 @@
 <?php
-	$defaultLeagueId = 72;
-        
-	include('common/utils.php');
+    require __DIR__ . '/../vendor/autoload.php';
+    $dotenv = Dotenv\Dotenv::createImmutable($_SERVER['DOCUMENT_ROOT']);
+    $dotenv->load();
 
-	$link = mysql_connect("gauntlet-server.winbeam.com", "nighthawk", "EssQueElle");
-	$db = mysql_select_db("league",$link);
+    $defaultLeagueId = 72;
+    include('common/utils.php');
+    
+    $db = new mysqli($_ENV['DB_HOST'], $_ENV['DB_USER'], $_ENV['DB_PASS'], $_ENV['DB_NAME']);
 
-	$utils = new Utils();
-        include_once('common/common.php');
-
+    $utils = new Utils();
+    $utils->setDB($db);
+    include_once('common/common.php');
 ?>

@@ -1,17 +1,21 @@
-<?
+<?php
 
+class Utils {
+    var $defaultLgId = 73;
+    var $LeagueTitle = "T3: The Gauntlet! :: League 8";
+    var $db = null;
 
-class Utils
-{
-	var $defaultLgId = 73;
-	var $LeagueTitle = "T3: The Gauntlet! :: League 8";
+    function setDB($db) {
+        $this->db = $db;
+    }
 
-	function query($query)
-	{
-		$result = mysql_query($query);
-		if (mysql_error()) die("<B>Query error ($query):</B> " . mysql_error());
-    		return $result;
-	}
+    function query($query)
+    {
+        $result = mysqli_query($this->db, $query);
+        $error = $this->db->error;
+        if($error != "") die("<b>Query error ($query):</b> " . $error);
+        return $result;
+    }
 
 	//Misc
 
@@ -338,29 +342,24 @@ class Utils
 	}
 
 
-	function getLeaguesDropBox()
-	{
-		$query = "SELECT League_ID, Description, Active FROM league.flags";
-		$result = $this->query($query);
+    function getLeaguesDropBox()
+    {
+        $query = "SELECT League_ID, Description, Active FROM Flags";
+        $result = $this->query($query);
 
-		while ($league = mysql_fetch_object($result))
-		{
-			if ($league->Active == 1)
-				$selected = "selected";
-			else
-				$selected = "";
+        while ($league = $result->fetch_object())
+        {
+            if ($league->Active == 1)
+                $selected = "selected";
+            else
+                $selected = "";
 
-			$lid = $league->League_ID;
-			$desc = $league->Description;
-			
-			if($lid!=72) {
-				print "<option $selected value='$lid'>$desc</option>\n";
-			}
-
-		}
-
-	}
-
+            $lid = $league->League_ID;
+            $desc = $league->Description;
+            
+            print "<option $selected value='$lid'>$desc</option>\n";
+        }
+    }
 }
 
 ?>

@@ -90,3 +90,23 @@ margin-top:2px;
 font-size:18px;
 color:#FFFFFF;
 }
+
+/* New Styles */
+
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --accent: #EDB90D;
+
+    --font-size-header: 16px;
+}
+
+p.title {
+    background-image: url(../images/PageTitle.png);
+    width: 168px;
+    height: 21px;
+    margin-top: 2px;
+    padding-left: 30px;
+    font-size: var(--font-size-header);
+    color: var(--white);
+}
