@@ -1,0 +1,43 @@
+1. Log Updater
+2. Log Parser
+3. Dynamic News (Table designed)
+4. Prediction Tracking (almost ok)
+5. Redesign (ok. Missing logout button and maybe some nifty shadow like the other tabs, but that's it)
+6. Fix Everything rofl (ok)
+7. Upcoming Events (ok)
+
+-Log Parser-
+
+2:Badger3920> haha oh so like i post a log
+2:Badger3920> and it searches for stats?
+2:VanHelsing> That would rock and it'd help avoid retarded mistakes
+2:Badger3920> yeah
+2:VanHelsing> But right now it just *reads* the log. Thus meaning it shows the log as if you were watching the Continuum console :p
+2:VanHelsing> It would only search AFTER <XTEAM> defeats <YTEAM> in <Z> minutes.
+
+-Predictions-
+
+It predicts. Gets winner. Gives 3 points if MATCHED score, BUT fails if loser score is 0. Why? No fucking idea.
+It needs tracking which could be like this:
+
+Standings:
+
+VagueKatti - 7pts
+Eagle+     - 4pts
+
+Both would have a link to predictuser.php which would have something like:
+
+Round 3
+URMOMISEZ 0:18  Vantage. (Match Score)
+d.n.      18:10 URMOMISEZ (Match Score)
+d.n.      0:18  Vantage. (Match Winner)
+somesquad 0:10  someother (TACHE ROJO)
+
+Round 4
+somesquad 5:0 someoneelse (Not played yet)
+
+-- ^ DONE ^ --
+
+2:Nighthawk> http://www.youtube.com/watch?v=2nywdxgJbHQ
+2:VanHelsing> http://www.yougay.com/watch?v=NHisf4g
+2:Nighthawk> www.lmao.com

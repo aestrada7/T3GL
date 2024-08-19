@@ -1,0 +1,92 @@
+body {
+background-color:#FFFFFF;
+font-family:Tahoma;
+font-size:10px;
+color:#666666;
+background-image:url(../images/Background.png);
+background-repeat:repeat-x;
+}
+
+p.og {
+color:#ff9a00;
+font-family:Tahoma;
+font-weight:bold;
+font-size:10px;
+}
+
+p.newspost {
+font-family:Tahoma;
+font-size:12px;
+color:#666666;
+margin-left:5px;
+margin-right:5px;
+margin-top:5px;
+}
+
+p.classicText {
+margin-left:5px;
+margin-right:5px;
+margin-top:5px;
+font-size:12px;
+font-family:Tahoma; 
+}
+
+p.menu {
+margin-left:5px;
+margin-top:5px;
+}
+
+a:link {
+color:#898989;
+text-decoration:none;
+}
+
+a:visited {
+color:#898989;
+text-decoration:none;
+}
+
+a:hover {
+color:#ffa200;
+text-decoration:none;
+}
+
+a:active {
+color:#ffffff;
+text-decoration:none;
+}
+
+input.login {
+font-size:10px;
+}
+
+td.InnerBig {
+font-size:16px;
+font-familiy:Tahoma;
+}
+
+.calendarHeader { font-weight: bolder; font-size: 12px; color: #EDB90D; cellpadding: 0; }
+.calendarToday { background-color: #666666; width: 14.29%; font-size: 12px; cellpadding: 0;  }
+.calendar { background-color: #333333; cellpadding: 0; }
+td.calendar { height: 75px; width: 14.29%; cellpadding: 0; }
+div.calendarPopup { background-color: #edb90d; }
+td.calendarPopup { color: #000000; }
+
+td.Menu {
+background-image:url(../images/MenuBackground.png);
+width:204px;
+}
+
+td.Content {
+background-image:url(../images/ContentBackground.png);
+width:557px;
+}
+
+p.Title {
+background-image:url(../images/PageTitle.png);
+width:198px;
+height:21px;
+margin-top:2px;
+font-size:18px;
+color:#FFFFFF;
+}

@@ -1,0 +1,9 @@
+<Playoffs>
+	<Match Id="1000" SquadA="Strangle" SquadB="+Forsaken+" SquadAId="1000" SquadBId="1008" ScoreA="18" ScoreB="2" Played="true" Round="1" />
+	<Match Id="1001" SquadA="Oblivion" SquadB="VitaminTHC" SquadAId="1001" SquadBId="1007" ScoreA="18" ScoreB="1" Played="true" Round="1" />
+	<Match Id="1002" SquadA="Gauntlet" SquadB="-Radicals-" SquadAId="1002" SquadBId="1006" ScoreA="18" ScoreB="3" Played="true" Round="1" />
+	<Match Id="1003" SquadA="Strong" SquadB="Authority^" SquadAId="1003" SquadBId="1005" ScoreA="22" ScoreB="14" Played="true" Round="1" />
+	<Match Id="1004" SquadA="Strangle" SquadB="Strong" SquadAId="1000" SquadBId="1003" ScoreA="18" ScoreB="6" Played="true" Round="2" />
+	<Match Id="1005" SquadA="Oblivion" SquadB="Gauntlet" SquadAId="1001" SquadBId="1002" ScoreA="23" ScoreB="21" Played="true" Round="2" />
+	<Match Id="1006" SquadA="Strangle" SquadB="Oblivion" SquadAId="1000" SquadBId="1001" ScoreA="24" ScoreB="11" Played="true" Round="3" />
+</Playoffs>
